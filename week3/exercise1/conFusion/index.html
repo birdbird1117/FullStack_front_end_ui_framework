@@ -68,7 +68,73 @@
             </div>  
         </div>
     </nav>    
-            
+    
+      <div id="reserveModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Reserve Table</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-horizontal" role="form"> 
+                        <div class="form-group">
+                            <label for="numberofguests" class="col-sm-3 control-label">Number of Gusests</label> 
+                            <div class="col-sm-9">
+                                <label class="radio-inline"> <input type="radio" name="numberofguests" value="1">   1   </label> 
+                                <label class="radio-inline"> <input type="radio" name="numberofguests" value="2">   2   </label>
+                                <label class="radio-inline"><input type="radio" name="numberofguests" value="3">   3 </label>
+                                <label class="radio-inline"><input type="radio"     name="numberofguests" value="4">   4</label>
+                                <label class="radio-inline"><input type="radio" name="numberofguests" value="5">   5</label>
+                                <label class="radio-inline"><input type="radio" name="numberofguests" value="6">   6    </label>           
+                            </div> 
+                        </div>
+                        <div class="form-group">
+                            <label for="section" class="col-sm-3 control-label">Section</label> 
+                            <div class="btn-group col-sm-5" data-toggle="buttons">
+                              <label class="btn btn-success active">
+                                <input type="checkbox" autocomplete="off" checked>
+                                  Non-Smoking
+                              </label>
+                              <label class="btn  btn-danger">
+                                <input type="checkbox" autocomplete="off">
+                                  Smoking
+                              </label>
+                            </div>   
+                        </div>   
+                        <div class="form-group">
+                            <label for="dateandtime" class="col-sm-3 control-label">Date and Time</label> 
+                            <div class="has-feedback col-sm-3">
+                                <input type="text" class="form-control" id="date" placeholder="Date">
+                                <span class="glyphicon glyphicon-calendar form-control-feedback"></span>
+                            </div> 
+                            <div class="has-feedback col-sm-3">
+                                <input type="text" class="form-control" id="date"  id="time" placeholder="Time">
+                                <span class="glyphicon glyphicon-time form-control-feedback"></span>
+                            </div>    
+                        </div> 
+                        <div class="form-group">
+                            <div class="col-xs-12 col-sm-2 col-sm-offset-3">
+                                <a type="submit" class="btn btn-primary">
+                                    Reserve</a>   
+                            </div> 
+                            <button type="button" class="btn btn-default btn-sm"
+                            data-dismiss="modal">Cancel</button>
+                        </div> 
+                        <div class="alert alert-warning alert-dismissible" role="alert">       <button type="button" class="close" data-dismiss="alert" aria-       label="Close"> 
+                            <span aria-hidden="true">&times;</span> 
+                            </button>
+                            
+                            <strong>Warning:</strong>: Please
+                            <a href="tel:+85212345678" class="alert-link"> call</a> us to reserve for more than six guests.
+                        </div>
+                        </form> 
+                    </div>
+            </div>
+        </div>
+    </div>
+    
     <div id="loginModal" class="modal fade" role="dialog">
         <div class="modal-dialog">
             <!-- Modal content-->
@@ -258,71 +324,7 @@
             </div>
         </div>
         
-        <div id="reserveModal" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Reserve Table</h4>
-                    </div>
-                    <div class="modal-body">
-                        <form class="form-horizontal" role="form"> 
-                        <div class="form-group">
-                            <label for="numberofguests" class="col-sm-3 control-label">Number of Gusests</label> 
-                            <div class="col-sm-9">
-                                <label class="radio-inline"> <input type="radio" name="numberofguests" value="1">   1   </label> 
-                                <label class="radio-inline"> <input type="radio" name="numberofguests" value="2">   2   </label>
-                                <label class="radio-inline"><input type="radio" name="numberofguests" value="3">   3 </label>
-                                <label class="radio-inline"><input type="radio"     name="numberofguests" value="4">   4</label>
-                                <label class="radio-inline"><input type="radio" name="numberofguests" value="5">   5</label>
-                                <label class="radio-inline"><input type="radio" name="numberofguests" value="6">   6    </label>           
-                            </div> 
-                        </div>
-                        <div class="form-group">
-                            <label for="section" class="col-sm-3 control-label">Section</label> 
-                            <div class="btn-group col-sm-5" data-toggle="buttons">
-                              <label class="btn btn-success active">
-                                <input type="checkbox" autocomplete="off" checked>
-                                  Non-Smoking
-                              </label>
-                              <label class="btn  btn-danger">
-                                <input type="checkbox" autocomplete="off">
-                                  Smoking
-                              </label>
-                            </div>   
-                        </div>   
-                        <div class="form-group">
-                            <label for="dateandtime" class="col-sm-3 control-label">Date and Time</label> 
-                            <div class="has-feedback col-sm-3">
-                                <input type="text" class="form-control" id="date" placeholder="Date">
-                                <span class="glyphicon glyphicon-calendar form-control-feedback"></span>
-                            </div> 
-                            <div class="has-feedback col-sm-3">
-                                <input type="text" class="form-control" id="date"  id="time" placeholder="Time">
-                                <span class="glyphicon glyphicon-time form-control-feedback"></span>
-                            </div>    
-                        </div> 
-                        <div class="form-group">
-                            <div class="col-xs-12 col-sm-2 col-sm-offset-3">
-                                <a type="submit" class="btn btn-primary">
-                                    Reserve</a>   
-                            </div> 
-                            <button type="button" class="btn btn-default btn-sm"
-                            data-dismiss="modal">Cancel</button>
-                        </div> 
-                        <div class="alert alert-warning alert-dismissible" role="alert">       <button type="button" class="close" data-dismiss="alert" aria-       label="Close"> 
-                            <span aria-hidden="true">&times;</span> 
-                            </button>
-                            
-                            <strong>Warning:</strong>: Please
-                            <a href="tel:+85212345678" class="alert-link"> call</a> us to reserve for more than six guests.
-                        </div>
-                        </form> 
-                    </div>
-            </div>
-        </div>
-    </div>
+      
 
     <footer class="row-footer">
         <div class="container">
@@ -369,11 +371,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-    <script>
-        $(document).ready(function(){
-        $('[data-toggle="tooltip"]').tooltip();
-         });
-    </script>
 </body>
 
 </html>
