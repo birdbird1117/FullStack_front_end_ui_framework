@@ -1,0 +1,24 @@
+{
+  "name": "conFusion",
+  "homepage": "https://github.com/birdbird1117/FullStack_front_end_ui_framework",
+  "authors": [
+    "birdbird1117 <dapeng.han.1989@gmail.com>"
+  ],
+  "description": "",
+  "main": "index.html",
+  "keywords": [
+    "conFusion"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0"
+  }
+}
